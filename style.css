@@ -1,0 +1,29 @@
+@font-face {
+  font-family: ahg;
+  src: url("AlteHaasGroteskRegular.ttf");
+}
+
+@font-face {
+  font-family: ahgb;
+  src: url("AlteHaasGroteskBold.ttf");
+}
+
+@font-face {
+  font-family: bui;
+  src: url("Buran USSR.ttf");
+}
+
+body {
+  -webkit-user-select: none;
+  cursor: default;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: bui;
+}
+
+h2 {
+  font-family: ahg;
+}
