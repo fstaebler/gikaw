@@ -1,17 +1,9 @@
 var fs = require("fs");
 var prototypePlanetShader = new THREE.ShaderMaterial({
   uniforms: {
-    viewerPosition: {
-      type: "v3",
-      value: new THREE.Vector3(0.0, 0.0, 3.0)
-    },
-    location: {
-      type: "v3",
-      value: new THREE.Vector3(0.0, 0.0, 0.0)
-    },
-    radius: {
-      type: "f",
-      value: 0.5
+    bilboard: {
+      type: "m4",
+      value: null
     },
     color: {
       type: "v4",
