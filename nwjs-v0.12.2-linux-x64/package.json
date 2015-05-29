@@ -1,0 +1,14 @@
+{
+  "main": "../index.html",
+  "name": "gikaw",
+  "window": {
+    "icon": "icon48.png",
+    "title": "Grafik ist Krieg: Advanced Warfare",
+    "toolbar": false,
+    "frame": false,
+    "height": 576,
+    "width": 1024,
+    "fullscreen": false,
+    "resizable": false
+  }
+}
