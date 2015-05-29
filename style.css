@@ -43,7 +43,7 @@ h2 {
 
 #title-bar {
   position: fixed;
-  width: 1011px;
+  width: calc(100vw - 13px);
   margin-top: 0px;
   padding: 5px;
   padding-right: 8px;
