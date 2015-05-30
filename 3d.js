@@ -5,7 +5,7 @@ contentDiv.appendChild(r.domElement);
 
 var s = new THREE.Scene();
 var c = new THREE.PerspectiveCamera(80, contentDiv.clientWidth / contentDiv.clientHeight, 0.1, 10.0);
-c.position.z = 5.0;
+c.position.z = 0.0;
 
 r.setClearColor(0, 0);
 
@@ -16,10 +16,10 @@ var pGeo = new THREE.PlaneBufferGeometry(1, 1, 1);
 var surface = new THREE.Mesh(pGeo, new THREE.LineBasicMaterial({}));
 
 s.add(surface);
-surface.position.x = 1.0;
-surface.position.y = 2.0;
-surface.position.z = -0.0;
-var planetRadius = 2;
+surface.position.x = 0;
+surface.position.y = -.5;
+surface.position.z = -1.1;
+var planetRadius = 1;
 var planetDistance = surface.position.distanceTo(c.position);
 surface.scale.x = surface.scale.y = surface.scale.z = Math.tan(Math.asin(planetRadius / planetDistance)) * planetDistance;
 s.overrideMaterial = prototypePlanetShader;
